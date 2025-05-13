@@ -1,208 +1,623 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		
-		<title>VICTOR IKECHUKWU PORTFOLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div style="position: absolute; top: 20px; left: 20px; z-index: 1000;">
-			<img src="images/your-logo.png" alt="Vikthore Logo" style="width: 100px; height: auto;">
-		</div>
+    <head>
+        <title>Victor Ikechukwu | About Me</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        <style>
+            /* Global CV Styles (Primarily targeting within .post section) */
+            body { /* Applied broadly but HTML5UP might have its own body styles */
+                line-height: 1.6;
+            }
 
-				<!-- Intro -->
-					<div id="intro">
-    						
-						<h1>VICTOR IKECHUKWU PORTFOLIO</h1>
-						<p>ML and AI engineer skilled in Python and Python ML Libraries such as Tensorflow, Scikit-Learn, Pytorch and Keras <a href="https://www.linkedin.com/in/victor-ikechukwu-1169942a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">@Victor</a> (linkedIn) and <a href="https://github.com/Vikthore">@Vikthore</a> (GitHub)<br />
-						
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+            .post { /* Specific to your CV content section */
+                font-family: 'Arial', sans-serif; /* Cleaner font stack */
+                color: #333; /* Dark grey for main text */
+            }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Vikthore</a>
-					</header>
+            .cv-section {
+                margin-bottom: 3em; /* Increased bottom margin for better separation in single column */
+            }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Vikthore</a></li>
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/victor-ikechukwu-1169942a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon brands alt fa-linkedin"><span class="label">linkedIn</span></a></li>
-									<li><a href="https://github.com/Vikthore" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+            .cv-section h2 {
+                font-size: 1.8em;
+                color: #2c3e50; /* Darker blue for headings */
+                border-bottom: 3px solid #3498db; /* Accent color border */
+                padding-bottom: 0.6em;
+                margin-bottom: 1.2em;
+                display: flex;
+                align-items: center;
+            }
 
-				<!-- Main -->
-					<div id="main">
+            .cv-section h2 .fas { /* Icon styling within section titles */
+                margin-right: 0.5em;
+                color: #3498db; /* Accent color for icons */
+                font-size: 0.9em;
+            }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/Vikthore/RL-Drilling-Model">Reinforcement Learning for Drilling Optimization</a></h2>
-									<p>In this project, An interactive dashboard was created where three RL agents were trained and deployed on Streamlit to optimize the ROP and reduce the Bit Wear Rate given five influencing drilling parameters (WOB, RPM, Mud Weight, FlowRate and Torque)</p>
-								</header>
-								<a href="#" class="image main"><img src="images/rl.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://rl-drilling-model-n33lmjg4ghwvbkrwf2v5fd.streamlit.app/" class="button large">View Website</a></li>
-								</ul>
-							</article>
+            .cv-section h3 {
+                font-size: 1.3em;
+                color: #34495e; /* Slightly lighter blue for sub-headings */
+                margin-bottom: 0.5em;
+            }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="#">ML Modeling in Predicting Recovery Factor</a></h2>
-									</header>
-									<a href="https://github.com/Vikthore/ML-models-in-predicting-recovery-factor" class="image fit"><img src="images/eor.jpg" alt="" /></a>
-									<p>In this project, an EOR dataset was generated from a stochastic model and was preprocessed (resampled using SMOTE) before being trained on and evaluated by three supervised learning models (LightGBM, Random Forest Regressor and Polynomial SVM) to predict the Recovery Factor of an electrokinetic assisted enhanced oil recovery process.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Vikthore/ML-models-in-predicting-recovery-factor" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">Mudloss Zones Prediction and classification with ML and DL</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/mudloss.jpg" alt="" /></a>
-									<p>In this project, a daily drilling report was obtained, analyzed, explored, cleaned, resampled before being trained on by an anomaly detection algorithm (Isolation Forest), a Mixture Density Network and on a developed Convolutional Neural Network Algorithm. All these models were trained to predict and classify zones where mud losses were most likely to occur. </p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Vikthore/Corrosion-rate-prediction-with-ML/blob/main/corrosion_rate_prediction.html">HYdrate Classification and Corrosion Rate Prediction with ML<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/corrosion.jpg" alt="" /></a>
-									<p>In this project, a comprehensive dataset was generated through simulations of a simplified one-dimensional pipeline model following pre-established engineering standards. The dataset was prreprocessed using Latin Hypercube Resampling. Two ML algorithms (ANN and LightGBM) were trained and validated using this dataset to predict the hydrate formation likelihood and corrosion rate.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Vikthore/Corrosion-rate-prediction-with-ML/blob/main/corrosion_rate_prediction.html" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Vikthore/sickle-cell-mortality-prediction/blob/main/Sickle_cell_mortality_prediction.html">Sickle cell mortality rate prediction with ML</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/sickle.jpg" alt="" /></a>
-									<p>A high-fidelity synthetic dataset simulating 1,000 patient profiles with demographic, clinical, and temporal features was generated, incorporating a significant class imbalance (95% Alive, 5% Deceased). A systematic methodology involving data preprocessing (including iterative imputation, feature engineering, and SMOTE oversampling), implementation of three machine learning models (LightGBM, Random Forest, and Artificial Neural Network), and evaluation using clinically relevant metrics (Recall, Precision, Specificity, AUPRC, AUC ROC) was employed. Model interpretability was explored using feature importance and partial dependence plots. Furthermore, a simulation using the best-performing model estimated the potential impact of a gene therapy intervention targeting Fetal Hemoglobin (HbF).</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Vikthore/sickle-cell-mortality-prediction/blob/main/Sickle_cell_mortality_prediction.html" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Vikthore/cuttings-transport-efficiency-optimization/blob/main/Cuttings_transport_efficiency_prediction_and_optimization.html">Cuttings Transport Efficiency optimization with Python and ML<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/cte.jpg" alt="" /></a>
-									<p>This project explores the use of natural additives—Terminalia Mantaly (TM) and Cocoyam (CY)—as sustainable alternatives to the synthetic Poly-anionic Cellulose (PAC-R) for improving Cuttings Transport Efficiency (CTE) in drilling operations. Using machine learning and optimization techniques, this study offers a data-driven framework to evaluate and enhance mud system performance while reducing environmental impact.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Vikthore/cuttings-transport-efficiency-optimization/blob/main/Cuttings_transport_efficiency_prediction_and_optimization.html" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Vikthore/inventory-analytics/blob/main/Inventory_data_analytics.html">Inventory data analytics with python</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/inventory.jpg" alt="" /></a>
-									<p>This project provides an in-depth analysis of inventory data for Warehouse One, located in Igbo Efun, Lekki. The main objective is to assess inventory health, monitor spatial stock distribution, and recommend actions to minimize spoilage and optimize usage. The dataset includes floor-by-floor breakdowns of item quantities, statuses (Good, Spoiling, Expired), and storage sections.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Vikthore/inventory-analytics/blob/main/Inventory_data_analytics.html" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
+            /* Header within .post section */
+            .post > header.major {
+                text-align: center;
+                margin-bottom: 3em;
+            }
 
-						
+            .profile-image {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 0 auto 1.5em auto;
+                display: block;
+                border: 6px solid #fff;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            }
 
-					</div>
+            .post > header.major h1 {
+                font-size: 2.8em;
+                margin-bottom: 0.2em;
+                color: #2c3e50;
+            }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Port Harcourt, Rivers State, Nigeria.</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+234) 7061538820</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">vikechukwu43@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									
-									<li><a href="https://www.linkedin.com/in/victor-ikechukwu-1169942a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon brands alt fa-linkedin"><span class="label">linkedIn</span></a></li>
-									<li><a href="https://github.com/Vikthore" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+            .post > header.major .subtitle {
+                font-size: 1.3em;
+                color: #7f8c8d; /* Muted color for subtitle */
+                margin-bottom: 1.5em;
+                font-style: italic;
+            }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Vikthore</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+            .contact-info {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Center contact items */
+                gap: 1.5em; /* Increased gap */
+                margin-bottom: 2em;
+                font-size: 0.95em;
+            }
 
-			</div>
+            .contact-info div {
+                display: flex;
+                align-items: center;
+                gap: 0.6em;
+                color: #555;
+            }
+            .contact-info div .fas {
+                color: #3498db; /* Accent color for icons */
+            }
+            .contact-info a {
+                color: #3498db;
+                text-decoration: none;
+            }
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            .download-btn {
+                display: inline-block;
+                margin-top: 1em;
+                margin-bottom: 2em;
+                padding: 0.8em 1.8em;
+                font-size: 1em;
+                background-color: #3498db; /* Primary button color */
+                color: white !important; /* Ensure text is white */
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+            .download-btn:hover {
+                background-color: #2980b9; /* Darker shade on hover */
+            }
+            .download-btn .fa-download {
+                margin-right: 0.5em;
+            }
 
-	</body>
+
+            /* Box styling for summary, skills, certs - Modern Card Look */
+            .box-card {
+                background: #ffffff;
+                padding: 1.8em;
+                border-radius: 8px;
+                margin-bottom: 1.5em;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                border: 1px solid #e0e0e0; /* Light border for definition */
+            }
+
+            /* Professional Profile */
+            .summary-box .box-card p {
+                font-size: 1.05em;
+                color: #555;
+                line-height: 1.7;
+            }
+
+            /* Experience and Education Items */
+            .experience-item, .education-item {
+                margin-bottom: 2.5em;
+                padding-bottom: 1.5em;
+                border-bottom: 1px solid #eee; /* Subtle separator */
+            }
+            .experience-item:last-child, .education-item:last-child { /* Apply to last item within its parent container (e.g., last experience item) */
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+             /* If an education section is the last child of its .cv-section, remove its bottom margin too */
+            .cv-section > .education-item:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 0.3em;
+                flex-wrap: wrap; /* Allow wrapping for long titles/dates */
+            }
+
+            .job-title { /* Company Name */
+                font-size: 1.4em;
+                font-weight: bold;
+                color: #34495e;
+            }
+
+            .job-date {
+                color: #7f8c8d;
+                font-style: italic;
+                font-size: 0.9em;
+                margin-left: auto; /* Pushes date to the right if space allows */
+                padding-left: 1em; /* Space from title if on same line */
+            }
+
+            .job-position { /* Actual Position */
+                font-size: 1.1em;
+                font-weight: bold;
+                color: #3498db; /* Accent color for the position */
+                margin-bottom: 0.8em;
+                display: block; /* Ensure it takes its own line if needed */
+            }
+
+            .job-description {
+                margin-left: 1.5em; /* Indent for list items */
+                list-style: disc;
+                padding-left: 1em;
+            }
+            .job-description li {
+                margin-bottom: 0.5em;
+                color: #555;
+            }
+
+            .education-item .job-title { /* University Name */
+                 font-size: 1.2em;
+            }
+            .education-item .job-position { /* Degree/Field */
+                 font-size: 1.05em;
+                 color: #3498db;
+            }
+             .education-item p {
+                font-size: 0.95em;
+                color: #555;
+                margin-top: 0.3em;
+            }
+
+
+            /* Skills Section */
+            .technical-skills-box h3 { /* Specific for current structure */
+                font-size: 1.15em;
+                color: #34495e;
+                margin-top: 1em;
+                margin-bottom: 0.8em;
+            }
+            .technical-skills-box h3:first-child {
+                margin-top: 0;
+            }
+
+
+            .skill-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.8em;
+                margin-bottom: 1.5em;
+            }
+
+            .skill-tag {
+                background: #eaf2f8; /* Light blue background */
+                color: #2c3e50; /* Dark blue text */
+                padding: 0.5em 1em;
+                border-radius: 20px; /* Pill shape */
+                font-size: 0.9em;
+                font-weight: 500;
+                transition: all 0.3s ease;
+            }
+            .skill-tag:hover {
+                background: #d4e6f1;
+                transform: translateY(-2px);
+            }
+
+            /* Certifications Section */
+            .certification-grid {
+                display: grid;
+                /* Adjust minmax for potentially wider single column view */
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 1.5em;
+            }
+
+            .certification-item {
+                display: flex; /* Use flex for alignment */
+                align-items: center;
+                gap: 1em; /* Gap between icon and text */
+                padding: 1em;
+                border-radius: 6px;
+                background-color: #f9f9f9; /* Light background for items */
+                border: 1px solid #e0e0e0;
+                text-decoration: none; /* Remove underline from link */
+                color: #333; /* Default text color */
+                transition: all 0.3s ease;
+            }
+
+            .certification-item:hover {
+                background-color: #f0f0f0;
+                transform: translateY(-3px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            }
+
+            .certification-item .fas { /* Icon styling */
+                color: #3498db; /* Accent color for cert icons */
+                font-size: 1.8em; /* Larger icon */
+            }
+
+            .certification-item span {
+                display: flex;
+                flex-direction: column; /* Stack title and issuer */
+            }
+            .certification-item span small { /* Issuer/Date */
+                color: #777;
+                font-size: 0.85em;
+                margin-top: 0.2em;
+            }
+
+
+            /* Professional References Section */
+            .references-grid {
+                display: grid;
+                 /* Adjust minmax for potentially wider single column view */
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 1.5em;
+            }
+
+            .reference-item { /* Inherits .box-card styling */
+            }
+            .reference-item h3 {
+                font-size: 1.2em;
+                color: #34495e;
+                margin-bottom: 0.5em;
+            }
+            .reference-item p {
+                margin-bottom: 0.5em;
+                font-size: 0.95em;
+                color: #555;
+                line-height: 1.5;
+            }
+            .reference-item p .fas { /* Icons in references */
+                margin-right: 0.5em;
+                color: #3498db;
+            }
+            .reference-item a {
+                color: #3498db;
+                text-decoration: none;
+            }
+            .reference-item a:hover {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 736px) {
+                .job-header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .job-date {
+                    margin-left: 0; /* Reset margin for stacked view */
+                    padding-left: 0;
+                    margin-top: 0.3em; /* Space from title when stacked */
+                }
+                .contact-info {
+                    flex-direction: column; /* Stack contact items on small screens */
+                    align-items: center; /* Center them when stacked */
+                    gap: 1em;
+                }
+                .post > header.major h1 {
+                    font-size: 2.2em; /* Slightly smaller on mobile */
+                }
+                .cv-section h2 {
+                    font-size: 1.6em; /* Adjust section titles for mobile */
+                }
+            }
+
+        </style>
+    </head>
+    <body class="is-preload">
+        <div style="position: absolute; top: 20px; left: 20px; z-index: 1000;">
+            <img src="images/your-logo.png" alt="Vikthore Logo" style="width: 100px; height: auto;">
+        </div>
+
+        <div id="wrapper" class="fade-in">
+
+                <div id="intro">
+                        <h1>VICTOR IKECHUKWU PORTFOLIO</h1>
+                        <p>ML and AI engineer skilled in Python and Python ML Libraries such as Tensorflow, Scikit-Learn, Pytorch and Keras <a href="https://www.linkedin.com/in/victor-ikechukwu-1169942a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">@Victor</a> (linkedIn) and <a href="https://github.com/Vikthore">@Vikthore</a> (GitHub)<br />
+                        
+                        <ul class="actions">
+                            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                        </ul>
+                    </div>
+
+                <header id="header">
+                        <a href="index.html" class="logo">Vikthore</a>
+                    </header>
+
+				<nav id="nav">
+					<ul class="links">
+						  <li class="active"><a href="index.html">Home</a></li>
+					      <li><a href="generic.html">Projects</a></li>
+						  <li><a href="elements.html">My Services</a></li>
+					</ul>
+                    <ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/victor-ikechukwu-1169942a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon brands alt fa-linkedin"><span class="label">linkedIn</span></a></li>
+                            <li><a href="https://github.com/Vikthore" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                     </ul>
+                </nav>
+
+                <div id="main">
+
+                <section class="post">
+    <header class="major">
+        <img src="images/profile.jpg" alt="Victor Ikechukwu" class="profile-image" />
+        <h1>Victor Ikechukwu</h1>
+        <p class="subtitle">Petroleum Engineer | AI Engineer | Data Scientist</p>
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i> Port Harcourt, Rivers State</div>
+            <div><i class="fas fa-phone"></i> <a href="tel:+2347061538820">+2347061538820</a></div>
+            <div><i class="fas fa-envelope"></i> <a href="mailto:vikechukwu43@gmail.com">vikechukwu43@gmail.com</a></div>
+            <div><i class="fas fa-globe"></i> <a href="https://github.com/Vikthore" target="_blank" rel="noopener noreferrer">github.com/Vikthore</a></div>
+        </div>
+        <a href="images/cv.pdf" class="button primary icon solid fa-download download-btn" target="_blank" rel="noopener noreferrer">Download Full CV</a>
+    </header>
+    
+    <div class="cv-section summary-box">
+        <h2><i class="fas fa-user-tie"></i> Professional Profile</h2>
+        <div class="box-card">
+            <p>Results-driven Petroleum Engineer with expertise in Machine Learning, AI Engineering, and Data Analytics. Passionate about leveraging AI-driven insights for problem-solving in energy, healthcare, and finance. Proficient in building and deploying scalable ML models, automation solutions, and predictive analytics tools. Seeking opportunities in AI, Data Science, or Petroleum Engineering to drive innovation and efficiency.</p>
+        </div>
+    </div>
+    
+    <div class="cv-section">
+        <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+        
+        <article class="experience-item">
+            <div class="job-header">
+                <h3 class="job-title">VIKTHORE</h3>
+                <span class="job-date">01/2024 - Present</span>
+            </div>
+            <h4 class="job-position">AI Engineer/CEO</h4>
+            <ul class="job-description">
+                <li>Developed and deployed AI-powered applications for business and academia, including chatbots and predictive models.</li>
+                <li>Implemented machine learning pipelines and models using Python, TensorFlow, and FastAPI, improving automation by 30%.</li>
+                <li>Built custom NLP models for sentiment analysis and text generation, reducing manual work by 50%.</li>
+            </ul>
+        </article>
+        
+        <article class="experience-item">
+            <div class="job-header">
+                <h3 class="job-title">Tenaris</h3>
+                <span class="job-date">01/2024 - 06/2024</span>
+            </div>
+            <h4 class="job-position">Field Operations Intern</h4>
+            <ul class="job-description">
+                <li>Assisted in data collection and process optimization at the pipe coating facility.</li>
+                <li>Worked on quality assurance and process automation, identifying 10% efficiency improvements.</li>
+                <li>Used Excel and Python for data analysis to improve production workflow.</li>
+            </ul>
+        </article>
+        
+        <article class="experience-item">
+            <div class="job-header">
+                <h3 class="job-title">U-Studa</h3>
+                <span class="job-date">03/2023 - 11/2023</span>
+            </div>
+            <h4 class="job-position">Engineering Mathematics/Fluid Mechanics Tutor</h4>
+            <ul class="job-description">
+                <li>Taught engineering mathematics and fluid mechanics, helping students improve grades by 35%.</li>
+                <li>Created interactive learning materials using Python and Jupyter Notebooks.</li>
+            </ul>
+        </article>
+    </div>
+    
+    <div class="cv-section">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <article class="education-item">
+            <div class="job-header">
+                <h3 class="job-title">Federal University of Technology Owerri</h3>
+                <span class="job-date">2024</span>
+            </div>
+            <h4 class="job-position">Petroleum Engineering / B.Eng</h4>
+            <p>Second Class Honors (Upper Division)</p>
+        </article>
+    </div>
+    
+    <div class="cv-section">
+        <h2><i class="fas fa-code"></i> Technical Skills</h2>
+        <div class="box-card technical-skills-box">
+            <h3>Programming & Data Science</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">Keras</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Flask</span>
+            </div>
+            
+            <h3>AI & Engineering</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Predictive Modeling</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Eclipse Simulations</span>
+                <span class="skill-tag">HSE</span>
+            </div>
+            
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Leadership</span>
+                <span class="skill-tag">Team Collaboration</span>
+                <span class="skill-tag">Technical Writing</span>
+                <span class="skill-tag">Public Speaking</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cv-section">
+        <h2><i class="fas fa-certificate"></i> Certifications</h2>
+        <div class="box-card">
+            <div class="certification-grid">
+                <a href="images/langchain.pdf" class="certification-item" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-certificate"></i> 
+                    <span>Generative AI with Langchain<br><small>Udemy (2025)</small></span>
+                </a>
+                <a href="images/science.pdf" class="certification-item" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-certificate"></i> 
+                    <span>Data Science Course<br><small>Udemy (2025)</small></span>
+                </a>
+                <a href="images/analyst.pdf" class="certification-item" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-certificate"></i> 
+                    <span>Data Analyst Course<br><small>Udemy (2025)</small></span>
+                </a>
+                <a href="images/Web.pdf" class="certification-item" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-certificate"></i> 
+                    <span>Full Stack Web Development<br><small>Udemy (2025)</small></span>
+                </a>
+                <a href="images/project.jpg" class="certification-item" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-certificate"></i> 
+                    <span>Project Management<br><small>Udemy (2024)</small></span>
+                </a>
+                <a href="images/safety.jpg" class="certification-item" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-certificate"></i> 
+                    <span>OSH Supervisor<br><small>OSHAssociation UK (2023)</small></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <h2><i class="fas fa-quote-left"></i> Professional References</h2>
+        <div class="references-grid">
+            <div class="reference-item box-card">
+                <h3>Prof. Stanley-Moore Onwukwe</h3>
+                <p>Professor of Petroleum Engineering<br>
+                Federal University of Technology Owerri</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:stanleyonwukwe@futo.edu.ng">stanleyonwukwe@futo.edu.ng</a><br>
+                <i class="fas fa-phone"></i> <a href="tel:+2348033349327">+234 803 334 9327</a></p>
+            </div>
+            
+            <div class="reference-item box-card">
+                <h3>Mrs Diepriye Omorodion-Osagie</h3>
+                <p>Head, HR Sub-saharan Africa<br>
+                Tenaris</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:dumuze@tenaris.com">dumuze@tenaris.com</a><br>
+                <i class="fas fa-phone"></i> <a href="tel:+2348038142152">+234 803 814 2152</a></p>
+            </div>
+            
+            <div class="reference-item box-card">
+                <h3>Ven Dr. Kelechi Okere PhD.</h3>
+                <p>Chaplain at ACOL FUTO</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ukokelechiokere@yahoo.com">ukokelechiokere@yahoo.com</a><br>
+                <i class="fas fa-phone"></i> <a href="tel:+2348030943603">+234 803 094 3603</a></p>
+            </div>
+            
+            <div class="reference-item box-card">
+                <h3>Mr Ferdinard Onyeweke</h3>
+                <p>Production Manager<br>
+                Pipe Coaters Nigeria ltd.</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:fonyeweke@tenaris.com">fonyeweke@tenaris.com</a><br>
+                <i class="fas fa-phone"></i> <a href="tel:+2347068912461">+234 706 891 2461</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    </div>
+
+                <footer id="footer">
+                        <section>
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" /></li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section class="split contact">
+                            <section class="alt">
+                                <h3>Address</h3>
+                                <p>Port Harcourt, Rivers State, Nigeria.</p>
+                            </section>
+                            <section>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+2347061568820">(+234) 7061568820</a></p>
+                            </section>
+                            <section>
+                                <h3>Email</h3>
+                                <p><a href="mailto:vikechukwu43@gmail.com">vikechukwu43@gmail.com</a></p>
+                            </section>
+                            <section>
+                                <h3>Social</h3>
+                                <ul class="icons alt">
+                                    <li><a href="https://www.linkedin.com/in/victor-ikechukwu-1169942a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon brands alt fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">linkedIn</span></a></li>
+                                    <li><a href="https://github.com/Vikthore" class="icon brands alt fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+                                </ul>
+                            </section>
+                        </section>
+                    </footer>
+
+                <div id="copyright">
+                        <ul><li>&copy; Vikthore</li><li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li></ul>
+                    </div>
+
+            </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            </body>
 </html>
